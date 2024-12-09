@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+html{
+    font-size: 90%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+    
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #29d9d5;
+}
+body{
+    background-color: #fefefe;
+}
+
+
+
+header{
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 8%;
+}
+header .logo a {
+    font-size: 25px;
+    color: #29d9d5;
+    text-decoration: none;
+}
+header .logo a span{
+    color: white;
+}
+.menu {
+    display: flex;
+    align-items: center;
+   
+}
+
+.menu li {
+    margin: 0 15px ;
+    list-style-type: none;
+    
+}
+
+.menu li a {
+    color: white;
+    font-size: 16px; 
+    text-decoration: none;
+   
+}
+
+.btn-reservation {
+    color: #29d9d5;
+    font-size: 15px;
+    border: 3px solid #29d9d5;
+    padding: 5px 20px;
+    transition: 0.7s;
+    text-decoration: none;
+}
+.btn-reservation:hover{
+    background-color: #29d9d5;
+    color: aliceblue;
+    font-weight: bold;
+}
+/* home acceuil */
+#home {
+    background-image: url(image1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 252, 252);
+    flex-direction: column;
+    position: relative;
+   
+    
+}
+#home h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    -webkit-text-stroke: #ffff 0.8px;
+    color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: lowercase;
+    
+}
+#home h4 {
+    font-size: 40px ;
+    color: #fff;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+#home p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+#home-btn {
+    margin-bottom: 20px;
+}
+
+.find_trip {
+    background-color: #222;
+    padding: 25px;
+    width: 75%;
+    position: absolute;
+    bottom: -50px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 25px;
+    margin: 20px;
+}
+
+.find_trip form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+}
+.find_trip form div , .find_trip form input[type="submit"] {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+section  h3 {
+    color: #001414;
+    text-align: center;
+    padding: 18px;
+}
+
+.find_trip form label {
+    color: #ccc;
+    font-size: 15ox;
+    margin-bottom: 15px;
+}
+
+.find_trip form input {
+    padding: 5px 20px;
+   background-color: transparent;
+   border: 1px solid #29d9d5;
+   outline: 0;
+   font-size: 13px;
+    color: white;
+
+}
+.find_trip form input [type="submit"] {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #29d9d5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.find_trip form input [type="submit"] :hover {
+    box-shadow: 0 0 10px #29d9d5;
+}
+
+/* section destinations*/
+
+.card {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black;
+    overflow: hidden;
+   
+   
+
+}
+
+.destination-section  h2 {
+    
+    margin-bottom: 3rem;
+    transition: 0.5ms ease;
+    
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+  .card img {
+      height: 300px;
+      object-fit: cover;
+  }
+  .card-button {
+    display: inline-block;
+    background-color: #29d9d5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: auto;
+    padding: 5px 13px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+ 
+  .card-button:hover{
+    color: #79b1b0;
+  }
+
+
+  form{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+form label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+padding: 4px;
+border:2px solid #29d9d5;
+font-size: 13px;
+
+}
+
+form button{
+    padding: 10px;
+    background-color:#29d9d5;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none ;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 120px;
+}
+
+footer{
+    
+    text-align: center;
+    background-color:rgb(7, 1, 27);
+    color: rgb(255, 255, 255);
+    padding: 50px ;
+    position: relative;
+    bottom: 3;
+    width: 100%;
+    font-size: 15px;
+    margin: 30px;
+}
+
+  
